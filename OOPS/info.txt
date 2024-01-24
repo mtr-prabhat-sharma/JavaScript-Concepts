@@ -1,0 +1,10 @@
+Object-oriented programming (OOP) is a programming paradigm that uses objects and classes to organize code. 
+JavaScript supports OOP principles, although it has a prototype-based object system rather than the classical 
+class-based system found in languages like Java or C++. Here are some key OOP concepts in JavaScript:
+
+1. Objects
+2. Classes
+3. Inheritance
+4. Encapsulation
+5. Polymorphism
+6. Abstraction
