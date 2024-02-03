@@ -9,9 +9,6 @@ let print = greet1.bind(obj);
 print();
 
 
-
-
-
 // let nameObj = { 
 //     name: "Tony"
 // } 
