@@ -22,8 +22,8 @@ cat.animalProperty();
 
 /**
  * Class with static properties and methods.
- * To call static property and static method there is no need to create the instance of class, we can call them directly using 
- * class name.
+ * To call static property and static method there is no need to create the instance 
+    of class, we can call them directly using class name.
  */
 
 
@@ -40,7 +40,7 @@ class Store {
 }
 
 let store = new Store(200);
-Store.leftStock(store.soldStock);
+Store.leftStock(store.soldStock); //calling directly using class name.
 
 /* .................................. ANOTHER WAY .................................... */
 
@@ -54,5 +54,5 @@ class NewStore {
     }
 }
 
-let newStore = new NewStore(200);
-NewStore.leftStock();
+//let newStore = new NewStore(200);
+NewStore.leftStock(); //Output: Left stock = 650
