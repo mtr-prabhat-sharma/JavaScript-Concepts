@@ -64,9 +64,69 @@
 // console.log(Animal.totalAnimals);
 // console.log(Animal.getTotalAnimals());
 
-let arr = [2,3,4,5,6,7];
-const res = arr.map((ele) => {
-    return ele * 2;
-})
-console.log(arr);
-console.log(res);
+// let arr = [2,3,4,5,6,7];
+// const res = arr.map((ele) => {
+//     return ele * 2;
+// })
+// console.log(arr);
+// console.log(res);
+
+
+
+// const LoggingService = (function () {
+//     const infoMessage = 'Information';
+//     const warnMessage = 'Warning';
+//     const errorMessage = 'Error';
+    
+//     return {
+//         info: function (str) {
+//             console.log(`${infoMessage}${str}`);
+//         },
+//         warning: function (str) {
+//             console.log(`${warnMessage}${str}`);
+//         },
+//         error: funciton (str) {
+//             console.log(`${errorMessage}${str}`)
+//         },
+        
+//     };
+// })()
+
+// LoggingService.info('one');
+
+
+
+// function demo(arr,k) {
+//     let newArr = arr.splice(0,k+1);
+//     //console.log(newArr) //1,2,3,4
+//    // console.log(arr) //5,6,7
+//     let arr2 = [];
+//     for(let i=newArr.length-1;i>=0;i--) {
+//         //console.log(newArr[i])
+//         arr2.push(newArr[i]);
+//     }
+//     let res = [...arr,...arr2];
+//     console.log(res);
+// }
+// demo([1,2,3,4,5,6,7], 3);
+
+// function union(arr1, arr2) {
+//     const res = [...new Set([...arr1, ...arr2])].sort();
+//     console.log(res);
+// }
+
+// union([4,3,6,9,2,7], [8,2,1,7,9])
+
+function intersection(arr1, arr2) {
+    let res = [];
+    for(let i=0;i<arr1.length;i++) {
+        for(let j=0;j<arr2.length;j++) {
+            if(arr1[i] === arr2[j] ) {
+                res.push(arr1[i]);
+            }
+        }
+    }
+    console.log(res);
+}
+
+intersection([4,3,6,9,2,7], [8,2,1,7,9])

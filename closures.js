@@ -4,6 +4,7 @@
    the outer function, even after outer function has finished execution.
  * A closure is the combination of a function and the lexical environment within 
    which that function was declared.
+ * A closure is a function that has access to all of the variables that were in scope when it was declared.
  */
 
 function outerFunction() {
