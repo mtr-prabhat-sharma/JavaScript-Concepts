@@ -117,16 +117,41 @@
 
 // union([4,3,6,9,2,7], [8,2,1,7,9])
 
-function intersection(arr1, arr2) {
-    let res = [];
-    for(let i=0;i<arr1.length;i++) {
-        for(let j=0;j<arr2.length;j++) {
-            if(arr1[i] === arr2[j] ) {
-                res.push(arr1[i]);
-            }
-        }
-    }
-    console.log(res);
-}
+// function intersection(arr1, arr2) {
+//     let res = [];
+//     for(let i=0;i<arr1.length;i++) {
+//         for(let j=0;j<arr2.length;j++) {
+//             if(arr1[i] === arr2[j] ) {
+//                 res.push(arr1[i]);
+//             }
+//         }
+//     }
+//     console.log(res);
+// }
 
-intersection([4,3,6,9,2,7], [8,2,1,7,9])
+// intersection([4,3,6,9,2,7], [8,2,1,7,9])
+
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise 1 rejected !");
+    }, 1000)
+});
+
+const promise2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise 2 resolved !");
+    }, 2000)
+});
+
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise 3 resolved !");
+    }, 3000)
+});
+
+const res = Promise.all([promise1, promise2, promise3]);
+res.then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.log(error);
+})

@@ -1,6 +1,6 @@
 /**
- * Array and Object destructuring is a feature of javascript which is introduced in ES6 and used to extract values from arrays 
- * and objects.
+ * Array and Object destructuring is a feature of javascript which is introduced in 
+ * ES6 and used to extract values from arrays and objects.
  */
 
 // Array Destructuring
