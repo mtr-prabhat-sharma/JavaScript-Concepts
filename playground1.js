@@ -23,16 +23,37 @@
   
 //   outer();
   
-function outerFunction() {
-    var x = 11;
+// function outerFunction() {
+//     var x = 11;
 
-    function innerFunction(y) {
-        var sum = x + y;
-        console.log(sum);
+//     function innerFunction(y) {
+//         var sum = x + y;
+//         console.log(sum);
+//     }
+//     console.log(innerFunction)
+//     return innerFunction; // Returning the inner function (creating a closure)
+// }
+
+// var closure = outerFunction(); // outerFunction is called, and innerFunction is returned
+// closure(22); // This still has access to the variable x from outerFunction
+
+
+function moveLastToFirst(arr) {
+    // Store the last element of the array
+    let lastElement = arr[arr.length - 1];
+
+    // Shift elements to the right
+    for (let i = arr.length - 1; i > 0; i--) {
+        arr[i] = arr[i - 1];
     }
-    console.log(innerFunction)
-    return innerFunction; // Returning the inner function (creating a closure)
+
+    // Place the last element at the beginning of the array
+    arr[0] = lastElement;
+
+    return arr;
 }
 
-var closure = outerFunction(); // outerFunction is called, and innerFunction is returned
-closure(22); // This still has access to the variable x from outerFunction
+// Example usage:
+let arr = [1, 2, 3, 4, 5];
+let outputArray = moveLastToFirst(arr);
+console.log(outputArray); // Output: [5, 1, 2, 3, 4]
