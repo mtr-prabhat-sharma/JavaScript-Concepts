@@ -20,3 +20,5 @@ console.log(copiedObj); //{ name: 'Jhon', age: 31, address: { city: 'NJ', PIN: 1
 console.log(obj); // { name: 'Jhon', age: 31, address: { city: 'NJ', PIN: 12345 } }
 
 
+// 2nd method: Using spread operators- but spread operators are used when objects 
+// are simple not nested structure

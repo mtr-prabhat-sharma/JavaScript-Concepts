@@ -1,8 +1,9 @@
 /*
- * Hoisting is a concept in JavaScript through which all the varibales and functions decalre with var keyword are moved to the 
-   top of their Scope.
+ * Hoisting is a concept in JavaScript through which all the varibales and 
+functions decalre with var keyword are moved to the top of their Scope.
 
- * It's important to note that only the declarations are hoisted, not the initializations.
+ * It's important to note that only the declarations are hoisted, not the 
+   initializations.
 
  */
 
