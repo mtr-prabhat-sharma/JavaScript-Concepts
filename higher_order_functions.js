@@ -9,3 +9,13 @@ const doubledNumbers = numbers.map(function (number) {
   return number * 2;
 });
 console.log(doubledNumbers); // Outputs: [2, 4, 6, 8]
+
+//Function returning another function
+function createMultiplier(x) {
+  return function(y) {
+    return x * y;
+  };
+}
+
+const double = createMultiplier(2);
+console.log(double(5)); // Output: 10
