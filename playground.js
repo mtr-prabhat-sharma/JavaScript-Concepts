@@ -131,27 +131,69 @@
 
 // intersection([4,3,6,9,2,7], [8,2,1,7,9])
 
-const promise1 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("Promise 1 rejected !");
-    }, 1000)
-});
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Promise 1 rejected !");
+//     }, 1000)
+// });
 
-const promise2 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("Promise 2 resolved !");
-    }, 2000)
-});
+// const promise2 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Promise 2 resolved !");
+//     }, 2000)
+// });
 
-const promise3 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("Promise 3 resolved !");
-    }, 3000)
-});
+// const promise3 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Promise 3 resolved !");
+//     }, 3000)
+// });
 
-const res = Promise.all([promise1, promise2, promise3]);
-res.then((data) => {
-    console.log(data);
-}).catch((error) => {
-    console.log(error);
-})
+// const res = Promise.all([promise1, promise2, promise3]);
+// res.then((data) => {
+//     console.log(data);
+// }).catch((error) => {
+//     console.log(error);
+// })
+
+const obj = [
+    {
+      name: "a",
+      children: [
+        {
+          name: "b",
+          children: [
+            {
+              name: "c",
+              children: null
+            }
+          ]
+        },
+        {
+          name: "d",
+          children: null
+        }
+      ]
+    },
+    {
+      name: "e",
+      children: null
+    }
+  ];
+  function getPaths(obj, path = '') {
+    const result = [];
+    
+    for (const item of obj) {
+      const newPath = path ? `${path}.${item.name}` : item.name;
+      console.log(path)
+      if (item.children !== null && item.children.length > 0) {
+        result.push(...getPaths(item.children, newPath));
+      } else {
+        result.push(newPath);
+      }
+    }
+    
+    return result;
+  }
+  console.log(getPaths(obj));
+  
