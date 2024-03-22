@@ -11,7 +11,8 @@ console.log(newArray); // output: [22,33,44]
 
 
 /**
- * Splice: Splice method is used modify the original array by removing or replacing the elements from the original array
+ * Splice: Splice method is used modify the original array by removing or replacing 
+   the elements from the original array
  * Syntax: let splicedArray = originalArray.splice(startIndex, deleteCount, element1, element2, ...)
  * In the above syntax element1, element2, .. are optional
  * Splice method changes the original array.

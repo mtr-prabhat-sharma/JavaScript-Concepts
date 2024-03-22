@@ -17,7 +17,7 @@ console.log(newArr) //Output: [ 22, 44, 66, 88 ]
 /* ............................ FIND ............................. */
 /**
  * FIND uses to find the first elements that satifies the condition.
- * FIND returns the first matching element and return UNDEFINED is none is found.
+ * FIND returns the first matching element and return UNDEFINED if none is found.
  * Stop iteration after first matching element is found.
  */
 
