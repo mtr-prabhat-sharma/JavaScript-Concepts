@@ -1,4 +1,3 @@
-console.log('throttle')
 
 const myThrottle = (fn, d) => {
     return function(...args) {

@@ -13,9 +13,9 @@ function outerFunction() {
 
     function innerFunction(y) {
         var sum = x + y;
-        console.log(sum);
+        //console.log(sum);
     }
-    console.log(innerFunction)
+    //console.log(innerFunction)
     return innerFunction; // Returning the inner function (creating a closure)
 }
 

@@ -1,4 +1,5 @@
-//Event Bubbling : It is the default behaviour in which events are move from child to parents
+//Event Bubbling : It is the default behaviour in which events are move from child to 
+                 //parents
 //Event Capturing : In this events are moved from parent to their childerns.
 
 //event.stopPropagation(): If we want to stop the behaviour of bubbling and capturing.
