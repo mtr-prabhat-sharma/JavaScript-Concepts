@@ -11,3 +11,14 @@ async function demo() {
 }
 
 demo();
+
+//How to get the data from the below function without using .then() or using await.
+async function greeting() {
+    return "Hello User";
+}
+//solution
+async function getResult() {
+    let res = await greetings();
+    console.log(res);//Hello User
+}
+getResult();

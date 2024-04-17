@@ -10,7 +10,7 @@
   console.log(res); //123456
   
   let myKey2 = "PIN";
-  let res3 = obj.myKey;
+  let res3 = obj.myKey2;
   console.log(res3); //undefined
   let res33 = obj[myKey2];
   console.log(res33);//123456
