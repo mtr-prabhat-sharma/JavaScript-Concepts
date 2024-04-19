@@ -2,6 +2,7 @@
  * Slice: Slice method is used to extract a portion of an array. It creates a new array that contains the extracted elements of array.
  * Syntax: let newArray = OriginalArray.slice(startIndex, endIndex)
  * Slice method does not changes the original array.
+ * Slice can work with strings;
  */
 let originalArray = [11,22,33,44,55,66,77,88];
 let newArray = originalArray.slice(1,4);
@@ -17,6 +18,7 @@ console.log(newArray); // output: [22,33,44]
  * In the above syntax element1, element2, .. are optional
  * Splice method changes the original array.
  * Splice method returns the deleted elements in array form
+ * Splice can't work with strings.
  */
 
 let originalArray2 = [11,22,33,44,55,66,77,88];
