@@ -19,7 +19,7 @@
 
     }
     
-    let obj = new normal(); // works in arrow function
+    let obj = new normal(); // works in normal function
 
     let arrow = () => {
 
